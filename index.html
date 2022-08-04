@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Fungal Growth Sim</title>
+  <meta name="description" content="Fungal Growth Sim">
+  <meta name="author" content="Steph Koopmanschap">
+
+  <meta property="og:title" content="Energy Pulserator">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://fungal-growth-sim.lan/index.html/">
+  <meta property="og:description" content="Fungal Growth Sim">
+  <meta property="og:image" content="image.png">
+
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <center>
+      <h1>Fungal Growth Sim</h1>
+      <h3>Click the button below to grow the fungus.</h3>
+      <button onclick="sproutSpore()">SPROUT SPORE!</button>
+      <br />
+      <br />
+      <button onclick="reset()">RESET</button>
+      <p><strong>Total food in the field: </strong><span id="totalFood">0</span></p>
+      <p><strong>Food per block: </strong><span id="avrgFood">0</span></p>
+      <label>Render food sources?</label>
+      <input type="checkbox" id="foodRenderToggle"></input>
+    </center>
+
+    <center>
+      <h4>For debugging</h4>
+      <button onclick="end()">END</button>
+      <button onclick="test()">TEST</button>
+    </center>
+
+    <script src="main.js"></script>
+</body>
+</html>
