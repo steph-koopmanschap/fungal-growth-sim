@@ -222,6 +222,11 @@ function update() {
                 //Original one stops being a growth tip and starts being a fungus
                 SimGrid[i][j].isGrowthTip = false;
                 SimGrid[i][j].isFungus = true;
+                //Small chance that the original one keeps being a growth tip. (promote branching) -- EXPERIMENTAL
+                if (randIntRange(0, 100) === 50) {
+                    SimGrid[i][j].isGrowthTip = true;
+                    SimGrid[i][j].isFungus = false;
+                }
             }
         }
     }
